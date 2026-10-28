@@ -1,0 +1,96 @@
+# ==============================================================================
+# Git Ignore Configuration for Plastic Defect Detection
+# ==============================================================================
+
+# ── Secrets and Environment Variables ─────────────────────────────────────────
+.env
+.env.*
+*.env
+**/.env
+**/.env.*
+!*.env.example
+!**/.env.example
+
+# ── Python / Virtual Environments ─────────────────────────────────────────────
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+**/dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+venv/
+**/venv/
+.venv/
+**/.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ── Node.js / Frontend ────────────────────────────────────────────────────────
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-ssr/
+**/dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ── Exclude Duplicate Nested Folder ───────────────────────────────────────────
+**/MDM plastic_defect_dashboard/MDM plastic_defect_dashboard/
+
+# ── Inspection Uploads & Generated Outputs ────────────────────────────────────
+uploads/*
+**/uploads/*
+!**/uploads/.gitkeep
+outputs/*
+**/outputs/*
+!**/outputs/.gitkeep
+audio_cache/*
+**/audio_cache/*
+!**/audio_cache/.gitkeep
+
+# ── System and IDE Artifacts ──────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── Model files whitelist ─────────────────────────────────────────────────────
+!**/*.pt

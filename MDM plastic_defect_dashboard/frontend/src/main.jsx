@@ -1,0 +1,16 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
+import { LanguageProvider } from './context/LanguageContext'
+import { ErrorBoundary } from './components/ErrorBoundary'
+
+ReactDOM.createRoot(document.getElementById('app')).render(
+  <React.StrictMode>
+    <ErrorBoundary>
+      <LanguageProvider>
+        <App />
+      </LanguageProvider>
+    </ErrorBoundary>
+  </React.StrictMode>,
+)
